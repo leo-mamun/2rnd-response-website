@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -26,7 +27,8 @@
                 <a href="#">Home</a>
                <a href="#">Shop</a> 
                <a href="#">About us</a> 
-            
+            <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a>
+
         </div>
         <br><br>
     </nav>
@@ -61,7 +63,7 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
+    <p>Lily Blossom</p>
     <p>20 usd</p>
     <a href=""><button class="btn">Add to Card</button></a>
 
@@ -69,8 +71,8 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
-    <p>20 usd</p>
+    <p>Lily Blossom</p>
+    <h5>20 usd</h5>
     <a href=""><button class="btn">Add to Card</button></a>
 
 </div>
@@ -78,7 +80,7 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
+    <p>Lily Blossom</p>
     <p>20 usd</p>
     <a href=""><button class="btn">Add to Card</button></a>
 
@@ -86,7 +88,7 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
+    <p>Lily Blossom</p>
     <p>20 usd</p>
     <a href=""><button class="btn">Add to Card</button></a>
 
@@ -94,7 +96,7 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
+    <p>Lily Blossom</p>
     <p>20 usd</p>
     <a href=""><button class="btn">Add to Card</button></a>
 
@@ -102,7 +104,7 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
+    <p>Lily Blossom</p>
     <p>20 usd</p>
     <a href=""><button class="btn">Add to Card</button></a>
 
@@ -110,7 +112,7 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
+    <p>Lily Blossom</p>
     <p>20 usd</p>
     <a href=""><button class="btn">Add to Card</button></a>
 
@@ -118,7 +120,7 @@
 <div>
     <img src="../assets/sample-flower-image.png" alt="">
     <br>
-    <p>lily Blossom</p>
+    <p>Lily Blossom</p>
     <p>20 usd</p>
     <a href=""><button class="btn">Add to Card</button></a>
 
@@ -149,18 +151,28 @@
 <section class="container discount_box ">
 <div class="discount_container">
     <div class="discount_bg">
-        <p class="discount_title">60% Off | Bloom Plant</p>
-        <a href="#">Shop now</a>
+        <div class="discount_title" > 
+             <p >60% Off | Bloom Plant</p>
+             <a href="#" class="buying">Shop now</a>
+     </div>
+      
 
     </div>
     <div class="discount_bg2">
-        <p class="discount_title">30% Off | Ana  Plant</p>
-        <a href="#">Shop now</a>
+        <div class="discount_title">  <p >30% Off | Ana  Plant</p>
+        <a href="#" class="buying">Shop now</a> 
+     </div>
+       
+
     </div>
 </div>
 <div class="discount_bg3">
-    <h3> 25% Off | Zabo Plant</h3>
+    <div class="buying2">
+          <h3 > 25% Off | Zabo Plant</h3>
 
+<a href="#" class="buying">Shop now</a> 
+  </div>
+    
 
 
 </div>
@@ -168,13 +180,17 @@
 
 </section>
 <section class="newsletter container">
-    <div>
-        <p>Join the colorful Bunch</p>
-    </div>
-    <div>
+    <div class="newsletter_style"> 
+
+         <p>Join the colorful Bunch</p>
+    
+    
         <input class="input" type="email" placeholder="Writte your email">
         <a href="#"><button class="btn2">Subscribe</button></a>
-    </div>
+    
+ </div>
+    
+   
 
 </section>
 
@@ -190,20 +206,23 @@
   </div>
 
   <div class="footer-links">
-    <div class="column">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Blog</a>
-      <a href="#">FAQ</a>
-      <a href="#">Contact Us</a>
-    </div>
-    <div class="column">
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Help Center</a>
-    </div>
+  <div class="footer-links">
+  <ul class="column">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <ul class="column">
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    <li><a href="#">Help Center</a></li>
+  </ul>
+</div>
+
   </div>
 
   <div class="footer-social">

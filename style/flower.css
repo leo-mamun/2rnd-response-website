@@ -44,6 +44,7 @@ width: 230px;
 background-color: rgb(233, 90, 8);
 color: white;
 border-radius: 10px;
+border: none;
 
 }
 .sample_flower{
@@ -75,18 +76,39 @@ grid-template-columns: repeat(4,1fr);
   border-radius: 8px;
 }
 
-.trust_badge {
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 160px; /* increase this to make it bigger */
+
+
+
+.discount_title{
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+margin-top: 20px;
+
+}
+.buying {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.buying2{
+  font-size:40px;
+  font-weight: 600;
+  color: white;
+
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
 }
 
-.trust_badge img {
-  width: 120%;
-  height: auto;
- 
-}
 .discount_bg{
 
 background-image:url(../assets/deal-bloom.png);
@@ -95,6 +117,7 @@ height: 200px;
 border-radius: 10px;
 
 }
+
 .discount_title{
 font-size: 20px;
 font-weight: bold;
@@ -112,12 +135,15 @@ border-radius: 10px;
 .discount_bg3{
 
 background-image:url(../assets/deal-zabo.png);
-width: 75%;
-border-radius: 10px;
+width: 753px;
+height: 423px;
+border-radius: 20px;
+position: relative;
 }
 .discount_box{
 display: flex;
 justify-content: space-between;
+gap: 25px;
 
 }
 .discount_container{
@@ -125,20 +151,78 @@ justify-content: space-between;
 display: flex;
 flex-direction: column;
 }
-.newsletter{
-background-image: url(..//assets/news-letter-bg.png);
-height: 500px;
-width: 100%;
+
+
+
+
+
+
+
+
+.trust_badge {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 160px; /* increase this to make it bigger */
 }
 
+.trust_badge img {
+  width: 120%;
+  height: auto;
+ 
+}
+
+.newsletter {
+  position: relative;
+  background-image: url(../assets/news-letter-bg.png);
+  height: 500px;
+  width: 100%;
+}
+
+.newsletter_style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.newsletter p {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+
+}
+.input {
+padding: 8px 20px 8px 20px;
+  width: 500px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn2 {
+  padding: 10px 20px;
+  background-color: coral;
+  color: white;
+  font-weight: 600;
+  border: none;
+  
+}
+
+
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr auto;
-  gap: 40px;
-  padding: 40px 60px;
-  background-color: #f9fbff;
-  color: #555;
-  align-items: start;
+  display: flex;
+ justify-content: space-between;
+  gap: 110px;
+ 
+color: #555;
+margin-top: 100px;
+  
+
+  
 }
 
 .footer-left {
@@ -157,14 +241,13 @@ width: 100%;
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
-.footer-links .column {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.footer-links li {
+  list-style: none;
+  margin-bottom: 10px;
 }
 
 .footer-links a {
@@ -173,14 +256,13 @@ width: 100%;
   font-size: 14px;
 }
 
-.footer-links a:hover {
-  color: #000;
-}
+
+
 
 .footer-social {
   display: flex;
   gap: 16px;
-  align-items: center;
+
   justify-content: flex-end;
 }
 
@@ -190,109 +272,3 @@ width: 100%;
 }
 
 
-@media screen and (max-width: 430px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .hd-banner {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  .head-title {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .head-title h1 {
-    font-size: 28px;
-  }
-
-  .sample_flower {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
-    padding: 0 16px;
-  }
-
-  .flower_pants {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .discount_box {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .discount_container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .discount_bg,
-  .discount_bg2,
-  .discount_bg3 {
-    width: 100%;
-  }
-
-  .newsletter {
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .newsletter input.input {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 12px;
-  }
-
-  .footer {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 30px 20px;
-    gap: 30px;
-  }
-
-  .footer-left,
-  .footer-links,
-  .footer-social {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-links {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-links .column {
-    align-items: center;
-  }
-
-  .footer-social {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .footer-left .logo {
-    margin: 0 auto 10px;
-  }
-
-  .btn,
-  .btn2 {
-    width: 100%;
-    max-width: 300px;
-  }
-}
