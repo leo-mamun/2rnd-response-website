@@ -138,18 +138,23 @@ background-image:url(../assets/deal-zabo.png);
 width: 753px;
 height: 423px;
 border-radius: 20px;
+margin-top: 150px;
 position: relative;
+
 }
 .discount_box{
 display: flex;
 justify-content: space-between;
 gap: 25px;
+margin: top 150px;
 
 }
 .discount_container{
 
 display: flex;
 flex-direction: column;
+margin-top: 150px;
+gap: 30px;
 }
 
 
@@ -163,7 +168,7 @@ flex-direction: column;
   position: absolute;
   top: -40px;
   right: -40px;
-  width: 160px; /* increase this to make it bigger */
+  width: 160px; 
 }
 
 .trust_badge img {
@@ -177,6 +182,7 @@ flex-direction: column;
   background-image: url(../assets/news-letter-bg.png);
   height: 500px;
   width: 100%;
+  margin-top:10px;
 }
 
 .newsletter_style {
@@ -270,5 +276,226 @@ margin-top: 100px;
   width: 28px;
   height: 28px;
 }
+
+.latest-deals {
+padding: 40px;
+  text-align: center;
+ border-radius: 8px;
+}
+
+
+
+
+.latest-deals h2 {
+  color: #000; 
+  font-size: 50px;
+}
+
+.latest-deals p {
+  font-size: 25px;
+  color: #6e6e6e; 
+ 
+ margin: 0 auto;
+  line-height: 1.5;
+}
+
+
+
+@media (max-width: 576px) {
+  .mobile-view-logo {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hd-banner, .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .hd-banner {
+    margin-top: 100px;
+    gap: 20px;
+  }
+
+  .head-title {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .head-title h1 {
+    font-size: 24px;
+  }
+
+  .sample_flower {
+    grid-template-columns: repeat(2, 1fr);
+    gap:16px;
+  }
+
+  .flower_pants {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+
+    .latest-deals {
+    padding: 30px 20px;
+  }
+
+  .latest-deals h2 {
+    font-size: 36px;
+  }
+
+  .latest-deals p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .discount_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discount_bg,
+  .discount_bg2{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+
+
+  .newsletter {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .newsletter_style {
+    position: static;
+    transform: none;
+  }
+
+  .newsletter p {
+    font-size: 24px;
+  }
+
+
+
+
+
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .trust_badge {
+   display: none;
+  }
+
+  
+  /* Image resizing */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sample_flower img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .flower-image-wrapper img {
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .newsletter img,
+  .footer img,
+  .trust_badge img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+
+.discount_bg3 {
+  width: 100%;
+  height: auto;
+  min-height: 300px; 
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  position: relative;
+ 
+}
+
+.buying2 {
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  max-width: 220px;
+  height: 40px;
+
+}
+
+.btn2 {
+  height: 40px;
+  white-space: nowrap;
+  max-width: 120px;
+}
+
+
+
+    
+  }
+
 
 
