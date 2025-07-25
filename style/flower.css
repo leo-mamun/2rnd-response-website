@@ -1,59 +1,61 @@
 
-*{
-font-family: "Noto Serif", serif;
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-
-    
-}
-.menu{
-    display: flex;
-    justify-content: space-between;
-   gap: 48px;
- 
+* {
+  font-family: "Noto Serif", serif; 
+  box-sizing: border-box;         
+  padding: 0;
+  margin: 0;
 }
 
-nav{
-display: flex;
-justify-content: space-between;
-align-items: center;
+/*Navigation Menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container {
   max-width: 1280px;
-  margin: auto;
-}
-a{
-     text-decoration: none;
-}
-.head-title{
-
-    width: 570px;
-height: 177px;
-margin-top: 150px;
-}
-.hd-banner{
-display: flex;
-justify-content: center;
-margin-top: 221px;
-
-}
-.btn{
-height: 50px;
-width: 230px;
-background-color: rgb(233, 90, 8);
-color: white;
-border-radius: 10px;
-border: none;
-
-}
-.sample_flower{
-
-display: grid;
-grid-template-columns: repeat(4,1fr);
-
+  margin: auto; 
 }
 
+a {
+  text-decoration: none; 
+}
+
+
+.head-title {
+  width: 570px;
+  height: 177px;
+  margin-top: 150px;
+}
+
+.hd-banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 221px;
+}
+
+/*Button Style */
+.btn {
+  height: 50px;
+  width: 230px;
+  background-color: rgb(233, 90, 8);
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+/*  simple flower Grid  */
+.sample_flower {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 
 .flower_pants {
@@ -76,113 +78,94 @@ grid-template-columns: repeat(4,1fr);
   border-radius: 8px;
 }
 
-
-
-
-.discount_title{
-text-align: center;
-font-weight: bold;
-font-size: 20px;
-margin-top: 20px;
-
+/* Discount Sections */
+.discount_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
 }
+
 .buying {
   font-size: 16px;
   font-weight: 600;
   color: white;
-
   padding: 8px 20px;
   border-radius: 6px;
   text-decoration: none;
   margin-top: 10px;
 }
-.buying2{
-  font-size:40px;
+
+.buying2 {
+  font-size: 40px;
   font-weight: 600;
   color: white;
-
- position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
 }
 
-.discount_bg{
-
-background-image:url(../assets/deal-bloom.png);
-width: 360px;
-height: 200px;
-border-radius: 10px;
-
+/* Background image for discounts */
+.discount_bg {
+  background-image: url(../assets/deal-bloom.png);
+  width: 360px;
+  height: 200px;
+  border-radius: 10px;
 }
 
-.discount_title{
-font-size: 20px;
-font-weight: bold;
-color: white;
-text-align: center;
-
-}
-.discount_bg2{
-
-background-image:url(../assets/deal-ana.png);
-width: 360px;
-height: 200px;
-border-radius: 10px;
-}
-.discount_bg3{
-
-background-image:url(../assets/deal-zabo.png);
-width: 753px;
-height: 423px;
-border-radius: 20px;
-margin-top: 150px;
-position: relative;
-
-}
-.discount_box{
-display: flex;
-justify-content: space-between;
-gap: 25px;
-margin: top 150px;
-
-}
-.discount_container{
-
-display: flex;
-flex-direction: column;
-margin-top: 150px;
-gap: 30px;
+.discount_bg2 {
+  background-image: url(../assets/deal-ana.png);
+  width: 360px;
+  height: 200px;
+  border-radius: 10px;
 }
 
+.discount_bg3 {
+  background-image: url(../assets/deal-zabo.png);
+  width: 753px;
+  height: 423px;
+  border-radius: 20px;
+  margin-top: 150px;
+  position: relative;
+}
 
+.discount_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin: top 150px; 
+}
 
+.discount_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  gap: 30px;
+}
 
-
-
-
-
+/* Trust Badge Position */
 .trust_badge {
   position: absolute;
   top: -40px;
   right: -40px;
-  width: 160px; 
+  width: 160px;
 }
 
 .trust_badge img {
   width: 120%;
   height: auto;
- 
 }
 
+/* Newsletter Section */
 .newsletter {
   position: relative;
   background-image: url(../assets/news-letter-bg.png);
   height: 500px;
   width: 100%;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .newsletter_style {
@@ -193,16 +176,14 @@ gap: 30px;
   text-align: center;
 }
 
-
-
 .newsletter p {
   font-size: 40px;
   font-weight: bold;
   color: white;
-
 }
+
 .input {
-padding: 8px 20px 8px 20px;
+  padding: 8px 20px;
   width: 500px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -215,20 +196,15 @@ padding: 8px 20px 8px 20px;
   color: white;
   font-weight: 600;
   border: none;
-  
 }
 
-
+/*Footer Section */
 .footer {
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
   gap: 110px;
- 
-color: #555;
-margin-top: 100px;
-  
-
-  
+  color: #555;
+  margin-top: 100px;
 }
 
 .footer-left {
@@ -262,13 +238,9 @@ margin-top: 100px;
   font-size: 14px;
 }
 
-
-
-
 .footer-social {
   display: flex;
   gap: 16px;
-
   justify-content: flex-end;
 }
 
@@ -277,29 +249,26 @@ margin-top: 100px;
   height: 28px;
 }
 
+/*Latest Deals Section*/
 .latest-deals {
-padding: 40px;
+  padding: 40px;
   text-align: center;
- border-radius: 8px;
+  border-radius: 8px;
 }
 
-
-
-
 .latest-deals h2 {
-  color: #000; 
+  color: #000;
   font-size: 50px;
 }
 
 .latest-deals p {
   font-size: 25px;
-  color: #6e6e6e; 
- 
- margin: 0 auto;
+  color: #6e6e6e;
+  margin: 0 auto;
   line-height: 1.5;
 }
 
-
+/* Responsive Styles Mobile */
 
 @media (max-width: 576px) {
   .mobile-view-logo {
@@ -310,7 +279,8 @@ padding: 40px;
     margin: 0 auto;
   }
 
-  .hd-banner, .footer {
+  .hd-banner,
+  .footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -346,7 +316,7 @@ padding: 40px;
 
   .sample_flower {
     grid-template-columns: repeat(2, 1fr);
-    gap:16px;
+    gap: 16px;
   }
 
   .flower_pants {
@@ -354,9 +324,7 @@ padding: 40px;
     gap: 30px;
   }
 
-
-
-    .latest-deals {
+  .latest-deals {
     padding: 30px 20px;
   }
 
@@ -375,13 +343,11 @@ padding: 40px;
   }
 
   .discount_bg,
-  .discount_bg2{
+  .discount_bg2 {
     width: 100%;
     height: auto;
     background-size: cover;
   }
-
-
 
   .newsletter {
     height: auto;
@@ -397,18 +363,16 @@ padding: 40px;
     font-size: 24px;
   }
 
-
-
-
-
   .footer {
     flex-direction: column;
     gap: 40px;
-    text-align: center;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .footer-links {
     grid-template-columns: 1fr;
+    text-align: left;
   }
 
   .footer-social {
@@ -416,11 +380,10 @@ padding: 40px;
   }
 
   .trust_badge {
-   display: none;
+    display: none;
   }
 
-  
-  /* Image resizing */
+ 
   img {
     max-width: 100%;
     height: auto;
@@ -437,7 +400,6 @@ padding: 40px;
   .flower-image-wrapper img {
     width: 100%;
     height: auto;
-    
   }
 
   .newsletter img,
@@ -448,54 +410,45 @@ padding: 40px;
     height: auto;
   }
 
-.discount_bg3 {
-  width: 100%;
-  height: auto;
-  min-height: 300px; 
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  margin-top: 30px;
-  position: relative;
- 
-}
-
-.buying2 {
-  font-size: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 0 16px;
-}
-
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: nowrap;
-  margin-top: 10px;
-}
-
-.input {
-  flex: 1;
-  min-width: 0;
-  max-width: 220px;
-  height: 40px;
-
-}
-
-.btn2 {
-  height: 40px;
-  white-space: nowrap;
-  max-width: 120px;
-}
-
-
-
-    
+  .discount_bg3 {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    position: relative;
   }
 
+  .buying2 {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 16px;
+  }
 
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+  }
 
+  .input {
+    flex: 1;
+    min-width: 0;
+    max-width: 220px;
+    height: 40px;
+  }
+
+  .btn2 {
+    height: 40px;
+    white-space: nowrap;
+    max-width: 120px;
+  }
+}
